@@ -2,3 +2,5 @@ DatingApp/API/bin/
 DatingApp/API/obj/
 DatingApp/API/dating.db
 DatingApp/.vscode/settings.json
+DatingApp/API/dating.db-shm
+DatingApp/API/dating.db-wal
