@@ -490,3 +490,6 @@ DatingApp/.vscode/settings.json
 DatingApp/API/dating.db-shm
 DatingApp/API/dating.db-wal
 DatingApp/.gitignore
+DatingApp/API/appsettings.Development.json
+DatingApp/API/appsettings.json
+
