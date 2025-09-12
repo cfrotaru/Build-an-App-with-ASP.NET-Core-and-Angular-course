@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   }
 
   getUsers() {
-    this.http.get<any[]>('https://localhost:5111/api/users').subscribe({
+    this.http.get<any[]>('http://localhost:5000/api/users').subscribe({
       next: (users) => (this.users = users),
       error: (err) => console.error('Failed to load users', err),
     });
