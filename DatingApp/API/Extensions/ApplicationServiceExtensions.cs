@@ -2,6 +2,7 @@ using API.Data;
 using API.Interfaces;
 using API.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace API.Extensions;
 
@@ -16,6 +17,8 @@ public static class ApplicationServiceExtensions
         services.AddControllers();
         services.AddCors();
         services.AddScoped<ITokenService, TokenService>();
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddAutoMapper(typeof(ApplicationServiceExtensions));
 
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         services.AddOpenApi();
